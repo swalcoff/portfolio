@@ -50,6 +50,18 @@
 		  top: 165px;
 		  left: 100px;
 		}
+		.column {
+		  float: left;
+		  width: 33.33%;
+		  padding: 5px;
+		}
+
+		/* Clear floats after image containers */
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
 	</style>
     
   </head>
@@ -155,50 +167,46 @@
     <section class="site-section block__62272" id="portfolio-section">
       
 
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 position-relative">
-            <h2 class="section-title text-center mb-5">My Portfolio</h2>
-          </div>
-        </div>
+  		<div class="container">
+	        <div class="row mb-5">
+	          <div class="col-12 position-relative">
+	            <h2 class="section-title text-center mb-5">My Portfolio</h2>
+	          </div>
+	        </div>
 
-        
-        <div id="posts" class="row no-gutter">
+	        
+	        <div id="posts" class="row no-gutter">
 
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/server.jpg" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/server.jpg">
-            </a>
-            <a href="https://github.com/swalcoff/HTTP-Server">Multithreaded HTTP Server</a>
-          </div>
+	          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+	            <a href="images/server.jpg" data-fancybox="images">
+	              <img class="img-fluid" src="images/server.jpg">
+	            </a>
+	            <a href="https://github.com/swalcoff/HTTP-Server">Multithreaded HTTP Server</a>
+	          </div>
 
-          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/cam.jpg" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/cam.jpg">
-            </a>
-            <a href="https://github.com/swalcoff/Blacklister-Mobile-Application">Blacklister Mobile Application</a>
-          </div>
+	          <div class="item web col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+	            <a href="images/cam.jpg" data-fancybox="images">
+	              <img class="img-fluid" src="images/cam.jpg">
+	            </a>
+	            <a href="https://github.com/swalcoff/Blacklister-Mobile-Application">Blacklister Mobile Application</a>
+	          </div>
 
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/lighting.png" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/lighting.png">
-            </a>
-            <a href="https://github.com/swalcoff/WebGL-3D-Lighting-Project.github.io">WebGL 3D Lighting</a>
-          </div>
+	          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+	            <a href="images/lighting.png" data-fancybox="images">
+	              <img class="img-fluid" src="images/lighting.png">
+	            </a>
+	            <a href="https://github.com/swalcoff/WebGL-3D-Lighting-Project.github.io">WebGL 3D Lighting</a>
+	          </div>
 
-          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
-            <a href="images/cloud.jpg" class="item-wrap fancybox">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/cloud.jpg">
-            </a>
-            <a href="https://github.com/swalcoff/Sharded-Distributed-System">WebGL 3D Lighting</a>
-          </div>
-          
-        </div>
-      </div>
+	          <div class="item brand col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+	            <a href="images/cloud.jpg" data-fancybox="images">
+	              <img class="img-fluid" src="images/cloud.jpg">
+	            </a>
+	            <a href="https://github.com/swalcoff/Sharded-Distributed-System">Sharded Distributed System</a>
+	          </div>
+	          
+	        </div>
+    	</div>
 
     </section>
 
